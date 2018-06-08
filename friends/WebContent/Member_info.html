@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<!--
+	作者：YKY994899941@qq.com
+	时间：2018-04-12
+	描述：会员显示界面
+-->
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/Member_info.css" />
+		<link rel="stylesheet" href="css/footerCSS.css" />
+		<link rel="stylesheet" href="css/headerCSS.css" />
+	 <style type="text/css">
+    /*鼠标悬停下拉事件*/
+    div > .dropdown-menu{
+        margin:0;  
+    }
+    div:hover > .dropdown-menu{
+        display:block; 
+    }
+    div .dropdown-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 10px;
+    }
+    </style>
+	
+	</head>
+
+	<body>
+		<div class="" style="background-color: #f2f2f2; width:100%;">
+		       <header id="jcZAHeader" class="header" style="background: rgb(242, 242, 242);">
+            <!--顶部-->
+            <section class="row">
+                <div class="row-4">
+                    <img src="header/headerimg/logo_c269fa4.png" alt="Logo" id="Logo">
+                </div>
+                <div class="row-4">
+                    <img src="header/headerimg/ad-word_07de3f2.png" alt="Slogan" id="Slogan">
+                </div>
+                <div class="row-4" id="ulxuanze">
+                    <ul class=list-inline "">
+                        <li class="list-inline-item">
+
+                                <div class="btn-group">
+                                        <img data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="header/headerimg/phone.png">
+                                        <div class="dropdown-menu">
+                                            <img class="dropdown-item" src="header/headerimg/QRcode.jpg"></a>
+                                        </div> 
+                                    </div>
+                            <a href="#" title="PY网app下载">手机版</a>&nbsp;|
+                            <div class="" style="display:none;">扫一扫下载客户端
+                                <i></i>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">收藏本站</a>&nbsp;|
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">在线客服</a>&nbsp;|
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">安全中心</a>&nbsp;|
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="help-center" rel="nofollow">帮助中心</a>&nbsp;|
+                        </li>
+                        <img src="header/headerimg/phone2.png">
+                        <li class="list-inline-item" style="color:#0056d3">红娘热线：4001-520520</li>
+                    </ul>
+
+                </div>
+            </section>
+            <section>
+                <nav class="navbar navbar-expand-lg navbar-dark" id="headerRoll" style="background:#703987;position: relative; top: auto; width: auto; opacity: 1;height:50px;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="navbar-brand" href="#" id="MyPy">
+                                    <label style="color: white;">我的PY</label>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="navbar-brand" href="#" id="MyPy">
+                                    <label style="color: white;">搜索</label>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#" id="MyPy">
+                                    <label style="color: white;">直营门店</label>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#" id="MyPy">
+                                    <label style="color: white;">真心会员</label>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#" id="MyPy">
+                                    <label style="color: white;">成功故事</label>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#" id="MyPy">
+                                    <label style="color: white;">一个论坛</label>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btn-group" id="Listmenu">
+                            <img data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                src="header/headerimg/icon-1_2a898ac.png" alt="mail">
+                            <div class="dropdown-menu" style="color:gray">
+                                <a class="dropdown-item" href="#">邮件</a>
+                                <a class="dropdown-item" href="#">消息</a>
+                                <a class="dropdown-item" href="#">关注</a>
+                                <a class="dropdown-item" href="#">谁看过我</a>
+                                <a class="dropdown-item" href="#">系统通知</a>
+                                <a class="dropdown-item" href="#">交往对象</a>
+                            </div> 
+                        </div>
+
+                        <div class="btn-group" id="Listmenu">
+                                <img data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                 src="header/headerimg/icon-2_b536323.png" alt="Personal information">
+                                <div class="dropdown-menu" style="color:gray">
+                                    <a class="dropdown-item" href="#">编辑资料</a>
+                                    <a class="dropdown-item" href="#">诚信认证</a>
+                                    <a class="dropdown-item" href="#">个人相册</a>
+                                    <a class="dropdown-item" href="#">系统设置</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">退出</a>
+                                </div> 
+                            </div>
+                    </div>
+                </nav>
+            </section>
+
+        </header>
+   
+			<!--以上是导航  头部-->
+			<div class="row" style="background-color: white; margin-top: 40px; width: 90%; height: 522px; margin-left: 75px;">
+				<div class="col-4">
+					<img src="img/yky/girl.jpg" style="margin-top: 40px; margin-left: 50px;" />
+				</div>
+				<div class="col-8">
+					<p style="margin-top: 45px;">
+						<a style="font-size: 2em;" href="#">会员1488455135</a>
+						<a href="#"><img src="img/yky/phone.png" title="已验证手机号" style="margin-bottom: 5px;" /></a>
+						<a href="#"><img src="img/yky/xinxi.png" title="未通过身份认证" style="margin-bottom: 5px;" /></a>
+						<a href="#"><img src="img/yky/zhima.png" title="芝麻信用未认证" style="margin-bottom: 5px;" /></a>
+					</p>
+					<p style="color: #9F9F9F;">
+						ID:1488455135&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚信值:2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" style="background-color: #A9A0C9; width: 130; height: 28; border-radius: 4px; color: whitesmoke;">查看最后登录时间</button>
+
+					</p>
+					<hr style="margin-top: 50px;" />
+					<div class="row" id="_xinxisize" style="margin-top:30px;">
+						<div class="col-4"><span>年龄:</span>18</div>
+						<div class="col-4"><span>身高:</span>168CM</div>
+						<div class="col-4"><span>月收入：</span>3001-5000元</div>
+						<div class="col-4"><span>婚况：</span>未婚</div>
+						<div class="col-4"><span>学历：</span>中专</div>
+						<div class="col-4"><span>工作地：</span>浙江杭州</div>
+						<div class="col-4"><span>职业：</span> --</div>
+						<div class="col-4"><span>星座：</span>处女座</div>
+						<div class="col-4"><span>籍贯：</span>--</div>
+
+					</div>
+					<hr style="margin-top: 30px;" />
+					<div class="row" style="margin-top: 30px;">
+						<div class="col-3"><button type="button" class="btn btn-danger" style="width: 100%;">发邮件</button></div>
+						<div class="col-2"><button type="button" class="btn btn-secondary" style="width: 100%;">打招呼</button></div>
+						<div class="col-2"> <button type="button" class="btn btn-secondary" style="width: 100%;">问问题</button></div>
+						<div class="col-2"><button type="button" class="btn btn-secondary" style="width: 100%;">委托红娘</button></div>
+						<div class="col-3"></div>
+					</div>
+					<div>
+						<ul class="list-inline" style="margin-top: 35px; font-size: 0.6em;">
+							<li class="list-inline-item">
+								<a href="#"><img src="img/yky/rentou.png" />关注</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#"><img src="img/yky/liwu.png" />送礼物</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#"><img src="img/yky/liaotian.png" />在线聊天</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#"><img src="img/yky/qingdi.png" />情敌动态</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#"><img src="img/yky/jubao.png" />举报/拉黑</a>
+							</li>
+
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+			<!--
+             以上  信息显示
+            -->
+			<div class="row" style=" width: 90%; margin-top: 20px; margin-left: 75px;">
+				<div class="col-8" style="background-color: white;">
+					<hr />
+					<div class="row">
+						<div class="col-3">
+							<img src="img/yky/ziliao.png" style="margin-left: 30px;" />
+						</div>
+						<div class="col-5">
+							<p>性别:女</p>
+							<p>身高:165CM</p>
+							<p>体重:--</p>
+							<p>体型：--</p>
+							<p>民族:汉</p>
+							<p>信仰:--</p>
+
+						</div>
+						<div class="col-4">
+							<p>生肖:兔</p>
+							<p>星座:处女座</p>
+							<p>血型:--</p>
+							<p>职业：--</p>
+							<p>公司:--</p>
+							<p></p>
+						</div>
+
+					</div>
+
+					<hr />
+					<div class="row">
+						<div class="col-3">
+							<img src="img/yky/life.png" style="margin-right: 30px;" />
+						</div>
+						<div class="col-5">
+							<p>住房条件:--</p>
+							<p>是否购车:未购车</p>
+							<p>是否吸烟:--</p>
+							<p>是否喝酒：--</p>
+							<p>厨艺:--</p>
+							<p>家务:--</p>
+
+						</div>
+						<div class="col-4">
+							<p>想何时结婚:--</p>
+							<p>婚后与父母住吗:--</p>
+							<p>与对方父母同住:--</p>
+							<p>较大的消费：--</p>
+							<p>喜欢怎样的约会:--</p>
+							<p></p>
+						</div>
+
+					</div>
+					<hr />
+					<div class="row">
+						<div class="col-3">
+							<img src="img/yky/hobby.png" style="margin-right: 30px;" />
+						</div>
+						<div class="col-5">
+							<p>喜欢的活动:--</p>
+							<p>喜欢的体育运动:--</p>
+							<p>喜欢的音乐:--</p>
+							<p>喜欢的影视节目：--</p>
+							<p></p>
+							<p></p>
+
+						</div>
+						<div class="col-4">
+							<p>喜欢的食物:--</p>
+							<p>喜欢的地方:--</p>
+							<p>喜欢的宠物:--</p>
+
+						</div>
+
+					</div>
+					<hr />
+					<div class="row">
+						<div class="col-3">
+							<img src="img/yky/zeou.png" style="margin-right: 30px;" />
+						</div>
+						<div class="col-5">
+							<p>性别:男</p>
+							<p>年龄:18-29岁</p>
+							<p>身高:--</p>
+							<p>学历：不限</p>
+							<p>月收入:3000以上</p>
+							<p>婚况:未婚</p>
+							<p>工作地区:湖南株洲</p>
+
+						</div>
+						<div class="col-4">
+							<p>体型:不限</p>
+							<p>职业:不限</p>
+							<p>是否抽烟:不限</p>
+							<p>是否喝酒:不限</p>
+							<p>有没有孩子:不限</p>
+							<p>是否想要孩子:不限</p>
+							<p>是否有照片:不限</p>
+						</div>
+
+					</div>
+					<hr />
+					<p style="text-align: center ;">
+						<a href="#" style="font-size: 0.6em;">TA资料完整度只有40%，邀请完善资料</a>
+					</p>
+				</div>
+<!--
+	作者：YKY994899941@qq.com
+	时间：2018-04-12
+	描述：以上信息显示
+-->
+				<div class="col-4">
+					<div style="background-color: white; margin-left: 10px;>
+				<p style=" margin-right:20px; height: 20px; ">(╯▽╰) 唉！她还没有收到礼物</p>
+				
+                    <div class="row " style="margin-left: 10px; margin-top: 15px; ">
+                  
+
+                     <div class="col-4 ">
+                     
+                     	<a href="# "> <img src="img/yky/liwu1.png "/></a>
+                     </div>
+                      <div class="col-4 ">
+                     	<a href="# "> <img src="img/yky/liwu2.png "/></a>
+                     </div>
+                      <div class="col-4 ">
+                     	<a href="# "> <img src="img/yky/liwu3.png "/></a>
+                     </div>
+                     </div>
+                     <button type="button " style="background-color: #A9A0C9; margin-top: 20px; margin-left: 30px; width: 80%; color: white; border-radius: 3px; margin-bottom: 20px; ">快来做第一个送TA礼物的人</button>
+				</div>
+	
+					 <div style="background-color: white; margin-left: 10px; margin-top: 20px">
+	                   <div style="background-color: #9D90D1;">
+	                   <h2 style="text-align: center; color: white; ">星级特权</h2>
+	                    <p style="text-align: center; color: white; font-size: 0.8em; margin-top: 10px; margin-bottom: 10px;">搜索提前，尊贵标识，更多曝光，更多机会</p>
+					    <p>&nbsp;</p>
+	                   </div>
+					 <div class="row" >
+					 	<div class="col-2">
+					 		
+					 	</div>
+					 	<div class="col-10">
+					 		<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    1个月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1元/天
+  </label>
+</div>
+					 	</div>
+					 	
+					 	
+					 </div>
+					 
+					 		 <div class="row" >
+					 	<div class="col-2">
+					 		
+					 	</div>
+					 	<div class="col-10">
+					 		<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios2">
+    3个月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.9元/天
+  </label>
+</div>
+					 	</div>
+					 	
+					 	
+					 </div>
+					 		 <div class="row" >
+					 	<div class="col-2">
+					 		
+					 	</div>
+					 	<div class="col-10">
+					 		<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios3">
+    12个月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.27元/天
+  </label>
+</div>
+<button type="button" style="background-color: #EB5454; color: white; margin-top: 20px; margin-left: 30px; width: 50%; border-radius: 3px; margin-bottom: 20px;" >立即开通</button>
+					 	</div>
+					
+					 	 </div>
+					 
+					
+					 </div>
+	     <div style="margin-top: 20px; margin-left: 10px;">
+					<a href="#"><img src="img/yky/shenji.png" style="width: 100%;"/></a>	
+					</div> 	
+					<!--<div style="background-color: white; margin-left: 10px;margin-top: 20px; " >
+					 <div class="row" >
+					 	<div class="col-3">
+					 		<span   style="font-size: 0.8em; margin-left: 5px;">
+							猜你喜欢
+							</span>
+					 	</div>
+					 	<div class="col-6"></div>
+					 	<div class="col-3">
+					 		<span ><a href="#"  style="font-size: 0.8em;">换一组</a></span>
+					 	</div>
+					 </div>-->
+					
+						
+						
+					</div>
+	
+			</div>
+
+		<div >
+        <hr>
+        <div class="text">
+            <div class="text-nowrap" style="width: 10px; margin-left: 80px;" id="iscity">
+                城市征婚：
+                <span id="iscitys">
+                    <a class="list-inline-item" href="#">
+                        <label>北京</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>上海</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>深圳</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>南京</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>重庆</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>武汉</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>成都</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>杭州</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>长沙</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>西安</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>东莞</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>佛山</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>苏州</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>天津</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>昆明</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>沈阳</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>济南</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>长春</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>太原</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>合肥</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>贵阳</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>福州</label>
+                    </a>
+                    <a class="list-inline-item" href="#">
+                        <label>[更多城市]</label>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <hr>
+
+
+        <footer class="text-nowrap">
+            <div class="">
+                <div class="font-weight-light" id="pyfooter">
+                    <div class="text-center">
+                        <a class="list-inline-item" href="#">
+                            <label>关于我们</label>
+                        </a>|&nbsp;&nbsp;
+                        <a class="list-inline-item" href="#">
+                            <label>联系我们</label>
+                        </a>|&nbsp;&nbsp;
+                        <a class="list-inline-item" href="#">
+                            <label>加入我们</label>
+                        </a>|&nbsp;&nbsp;
+                        <a class="list-inline-item" href="#" rel="nofollow">
+                            <label>合作伙伴</label>
+                        </a>|&nbsp;&nbsp;
+                        <a class="list-inline-item" href="#" rel="nofollow">
+                            <label>意见反馈</label>
+                        </a>|&nbsp;&nbsp;
+                        <a href="#" class="list-inline-item">
+                            <label>网站地图</label>
+                        </a>
+                        |&nbsp;&nbsp;
+                        <a href="#" class="list-inline-item">
+                            <label>帮助中心</label>
+                        </a>|&nbsp;&nbsp;
+                        <a href="#" class="list-inline-item">
+                            <label>珍爱会员</label>
+                        </a>|&nbsp;&nbsp;
+                        <a href="#" class="list-inline-item">
+                            <label>珍爱相亲</label>
+                        </a>|&nbsp;&nbsp;
+                        <a href="#" class="list-inline-item">
+                            <label>珍爱网服务协议</label>
+                        </a>|&nbsp;&nbsp;
+                        <a href="#" class="list-inline-item">
+                            <label>个人信息保护政策</label>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <span>品牌：12年专业婚恋服务</span>&nbsp;&nbsp;
+                        <span>专业：庞大的资深红娘队伍</span>&nbsp;&nbsp;
+                        <span>真实：诚信会员验证体系</span>
+                    </div>
+                    <div class="text-center">
+                        <span>客服热线：4001-520-520（周一至周日：9:00-21:00）</span>
+                        <span>客服信箱：kefu@zhenai.com</span>
+                    </div>
+                    <div class="text-center">
+                        <span>
+                            <a style="color:#9f9f9f;" href="#" target="_blank" rel="nofollow">违法和不良信息举报</a>
+                        </span>&nbsp;&nbsp;
+                        <span>违法和不良信息举报专线：66666666</span>&nbsp;&nbsp;
+                        <span>举报信箱：
+                            <a style="color: #9f9f9f;" href="Pyfriends@Py.com" class="underlines" rel="nofollow">jubao@zhenai.com</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="text-center" id="pyfooter1">
+                    <p>Copyright © 2005-2018 版权所有：深圳市珍爱网信息技术有限公司</p>
+                    <p>增值电信业务经营许可证：粤B2-20040382
+                        <a target="_blank" href="#">粤ICP备09157619号-1</a> 乙测资字4410775
+                        <a target="_blank" href="#" class="gongwang">
+                            <img src="header/footerimg/gongan.png" alt="">
+                        </a> 粤公网安备 4403050200 0534号</p>
+
+                    <div class="out-link" id="foot_link">
+                        <a title="网文证" href="#" class="link10" target="_blank" rel="nofollow">
+                            <img src="header/footerimg/wen_bc81e4f.png" alt="" style="width:40px">
+                        </a>
+                        <a target="_blank" title="深圳网监备案" href="#" class="link5" rel="nofollow">
+                            <img src="header/footerimg/licence_29e09a5.png" alt="">
+                        </a>
+                        <a title="深圳举报中心" href="#" class="link6" target="_blank" rel="nofollow">
+                            <img src="header/footerimg/report_625a5f6.png" alt="">
+                        </a>
+                        <a title="违法和不良信息举报中心" href="#" class="link3" target="_blank" rel="nofollow">
+                            <img src="header/footerimg/report_dfda835.jpg" alt="">
+                        </a>
+                        <a title="诚信示范网站" href="#" class="link4" target="_blank" rel="nofollow">
+                            <img src="header/footerimg/cert_c313c2f.png" alt="">
+                        </a>
+                        <a title="AAA级信用企业" href="#" class="link7" target="_blank" rel="nofollow">
+                            <img src="header/footerimg/rate_e612220.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+		</div>
+		
+		<script src="js/jquery-3.3.1.min.js "></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/bootstrap.min.js "></script>
+		
+   		
+		
+	</body>
+
+</html>

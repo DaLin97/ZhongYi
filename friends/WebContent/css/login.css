@@ -1,0 +1,21 @@
+body {
+	margin-top: 20px;
+	margin: 0 auto;
+	width: 100%;
+}
+div#containster div#div-form{
+    width:400px;
+    background-color: white;
+    height: 460px;
+    position: relative;
+    padding:20px; 
+    margin-top: -600px;
+    margin-left: 900px;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+}
+input#submit{
+    width:330px;  
+    height: 40px;  
+    margin-top: -20px;
+}

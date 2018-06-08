@@ -1,0 +1,214 @@
+div #background1 {
+	position: relative;
+	right: 7px;
+	width: 100%;
+	height: 100px;
+	background-color: red;
+}
+
+div .row .row-1 img {
+	width: 74px;
+	height: 74px;
+	margin: 0.39cm;
+	float: left;
+}
+
+#Middle .row-4 {
+	width: 368px;
+	height: 250px;
+	margin-left: 2cm;
+	float: left;
+}
+
+#HH .row-4 {
+	position: relative;
+	left: 42px;
+	width: 262px;
+	height: 154px;
+	margin-right: -17px;
+	margin-left: -15px;
+	background-color: white;
+}
+
+#HH .row-4 {
+	border: 0.1px solid #CDC9C9;
+}
+
+#HH img {
+	position: relative;
+	left: 81px;
+	top: 46px;
+}
+
+#HH p {
+	position: relative;
+	left: 81px;
+	top: 46px;
+}
+
+.frame-right {
+	position: relative;
+	width: 290px;
+	height: 0px;
+	float: right;
+}
+
+.frame-left {
+	position: relative;
+	width: 895px;
+	float: left;
+	margin-left: 131px;
+}
+
+#HH .row-4:hover {
+	background-color: gainsboro;
+}
+
+#jcMyInfoPanel {
+	height: 292px;
+	background-color: wheat;
+	position: relative;
+	top: -133px;
+	right: 94px;
+}
+
+#TouXiang {
+	height: 110px;
+	margin: 17px;
+}
+
+#ismask {
+	background: #999;
+	color: #fff;
+	height: 25px;
+	width: 20px;
+	position: relative;
+	top: 68px;
+	left: -114px;
+}
+
+.myname {
+	position: relative;
+	top: -122px;
+	left: 132px;
+}
+
+.xuanze {
+	float: left;
+}
+
+#myxinxia1 {
+	position: relative;
+	top: -134px;
+}
+
+#ismycolor .list-group-item {
+	height: 38px;
+	background-color: #FFFACD;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 15px;
+}
+
+#ismycolor .list-group-item:hover {
+	background-color: #FFC1C1;
+}
+
+#cityleaa {
+	position: relative;
+	right: 3px;
+	margin-top: 11px;
+	border: 0.5px solid gainsboro;
+	width: 762px;
+	height: 50px;
+}
+
+#cityleaa select {
+	width: 69px;
+	margin-top: 11px;
+}
+
+#cityleaa label {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	position: relative;
+	top: 8px;
+}
+
+#gallery-wrapper {
+	position: relative;
+	max-width: 84%;
+	width: 83%;
+	left: -84px;
+	margin: 10px auto;
+}
+
+img.thumb {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.white-panel {
+	position: absolute;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+
+.white-panel h1 {
+	font-size: 1em;
+}
+
+.white-panel h1 a {
+	color: #A92733;
+}
+
+/*鍔ㄦ�佽交寰檭鍔ㄦ晥鏋�*/
+.white-panel:hover {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	margin-top: -5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#jcBrandBanner {
+	position: relative;
+	top: -105px;
+	right: 114px;
+}
+
+#jcBrandBanner a {
+	margin: 20px;
+}
+
+.white-panel {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 12px;
+	color: gray;
+}
+
+.white-panel span {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#yigeziti {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 80px;
+	color: yellow;
+}
+
+#row-1AA {
+	margin-left: 122px;
+}
+
+#Middle {
+	position: relative;
+	right: -123px;
+}

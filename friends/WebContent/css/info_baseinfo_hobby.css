@@ -1,0 +1,138 @@
+
+
+
+
+/*右侧列表*/
+.demo {
+    margin-top: 30px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+#accordion .panel {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+#accordion .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+
+#accordion .panel-title a {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f7c59f;
+    padding: 15px 48px 15px 20px;
+    background: #e16b47;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed {
+    color: #e16b47;
+    background: #f7c59f;
+    border-bottom: 1px solid #3d3537;
+}
+
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background: #f7c59f;
+}
+
+#accordion .panel-title a.collapsed:after {
+    background: #e16b47;
+}
+
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before {
+    content: "\f068";
+    font-family: FontAwesome;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #f7c59f;
+    position: absolute;
+    top: 12px;
+    right: 19px;
+    font-size: 14px;
+    color: #e16b47;
+    text-align: center;
+    z-index: 1;
+}
+
+#accordion .panel-title a.collapsed:before {
+    content: "\f067";
+    color: #f7c59f;
+    background: #e16b47;
+}
+
+#accordion .panel-body {
+    background: #e16b47;
+    color: #f7c59f;
+    padding: 20px 50px 15px 20px;
+    line-height: 25px;
+    border: none;
+    position: relative;
+}
+
+#accordion .panel-body:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    background: #f7c59f;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+
+div#rightSidebody{
+    /* height: 1000px; */
+    /* background-color: blue; */
+    border:2px solid #000;
+    border-radius: 5px;
+    
+}
+div#rightSidebody div#previewInfo{
+    background-color: #ccc;
+    border-bottom: 1px solid #929292;
+    padding: 10px;
+}
+
+div#hobbyInfo{
+    padding-top: 30px;
+}
+div#hobbyInfo li{
+    display:block;
+}
+
+
+/* 下一页按钮 */
+div#baseInfoButton{
+    padding-left: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+div#baseInfoButton a#baseInfoButtonA1{
+    margin-right: 20%;
+}
+
+

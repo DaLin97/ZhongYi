@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/searchCSS.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/cityselect.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/default.css">-->
+    <style>
+
+    </style>
+</head>
+
+<body style="background-color: gainsboro;">
+    <!--下拉选择框-->
+    <div class="container-fluid">
+        <div class="card">
+            <div class="cardone1">
+                <div class="row" style="width:100%;">
+                    <div class="col-7">
+                        <label style=" font-family:'Courier New', Courier, monospace;font-size: 10px;color: dimgrey;">已选条件：</label>
+                        <select class="custom-select  custom-select-sm">
+                            <option value="1">男士</option>
+                            <option value="2">女士</option>
+                        </select>
+                        <select class="custom-select custom-select-sm" style="width:10.5%">
+                            <option selected>18-22</option>
+                            <option value="1">23-27</option>
+                            <option value="2">28-32</option>
+                            <option value="3">33-37</option>
+                            <option value="4">38-42</option>
+                            <option value="5">43-47</option>
+                            <option value="6">48-52</option>
+                        </select>
+                        <input type="text" class="form-control-addon" id="citySelect" placeholder="选择城市">
+                        <select class="custom-select custom-select-sm">
+                            <option value="1">未婚</option>
+                            <option value="2">离异</option>
+                            <option value="3">丧偶</option>
+                            <option value="4">不限</option>
+                        </select>
+                        <select class="custom-select custom-select-sm" style="width:86px">
+                            <option selected>175-180</option>
+                            <option value="1">150以下</option>
+                            <option value="2">150-155</option>
+                            <option value="3">155-160</option>
+                            <option value="4">165-170</option>
+                            <option value="5">170-175</option>
+                            <option value="6">180-185</option>
+                            <option value="7">185-190</option>
+                            <option value="8">190-195</option>
+                            <option value="9">195以上</option>
+                        </select>
+                        <select class="custom-select custom-select-sm" style="width:123px">
+                            <option value="1" selected>职业</option>
+                            <option value="2">销售</option>
+                            <option value="3">客户服务</option>
+                            <option value="4">计算机/互联网</option>
+                            <option value="5">通信/电子</option>
+                            <option value="6">生产/制造</option>
+                            <option value="7">物流/仓储</option>
+                            <option value="8">商贸/采购</option>
+                            <option value="9">人事/行政</option>
+                            <option value="10">高级管理</option>
+                            <option value="11">广告/市场</option>
+                            <option value="12">传媒/艺术</option>
+                            <option value="13">生物/制药</option>
+                            <option value="14">医疗/护理</option>
+                            <option value="15">金融/银行/保险</option>
+                            <option value="16">建筑/房地产</option>
+                            <option value="17">咨询/顾问</option>
+                            <option value="18">法律</option>
+                            <option value="19">财会/审计</option>
+                            <option value="20">教育/科研</option>
+                            <option value="21">服务业</option>
+                            <option value="22">交通运输</option>
+                            <option value="23">政府机构</option>
+                            <option value="24">军人/警察</option>
+                            <option value="25">农林牧渔</option>
+                            <option value="26">自由职业</option>
+                            <option value="27">在校学生</option>
+                            <option value="28">待业</option>
+                            <option value="29">其他行业</option>
+                        </select>
+                        <select class="custom-select custom-select-sm" style="width:98px">
+                            <option selected>5000-7000</option>
+                            <option value="1">3000以下</option>
+                            <option value="2">3000-5000</option>
+                            <option value="3">7000-9000</option>
+                            <option value="4">9000-11000</option>
+                            <option value="5">11000以上</option>
+                        </select>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-2">
+                        <input type="text" placeholder="ID称呼搜索" id="sousuo">
+                        <a href="#" id="tubiao">
+                            <img src="img/wdl/imgs/sousuo.png" alt="搜索">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--按指定条件查询-->
+            <div class="cardone2">
+                <div class="row" style="width:100%;">
+                    <div class="col-8">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <label>热门标签:</label>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" style="color:orange">天生一对</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" style="color:red">倾国倾城</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" style="color:blue">才华横溢</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" style="color:green">家财万贯</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" style="color:pink">凹凸有致</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" style="color:black">谁在找我</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-danger">搜索</button>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--排序-->
+
+
+    <!--无限显示-->
+    <div class="htmleaf-container">
+        <div class="htmleaf-content bgcolor-3">
+            <div id="div1">
+                <div class="box">
+                    <img src="img/wdl/searchimg/01.jpg" alt="">
+                    <p>
+                        <a href="#">用户名</a>
+                    </p>
+                        <span>22</span>
+                        <span>岁,</span>
+                        <span>浙江杭州</span>,
+                        <span>161cm</span>
+                    <p>
+                        <label>交友宣言：</label>
+                        <span>爱我你怕了吗？</span>
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/02.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/03.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/04.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/05.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/06.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/07.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/01.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/02.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/03.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/04.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/05.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/06.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/07.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/01.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/02.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/03.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/04.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/05.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/06.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/07.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/01.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/02.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/03.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/04.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/05.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/06.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/07.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/01.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/02.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/03.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/04.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/05.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/06.jpg" alt="">
+                    <p>
+                            <a href="#">用户名</a>
+                        </p>
+                            <span>22</span>
+                            <span>岁,</span>
+                            <span>浙江杭州</span>,
+                            <span>161cm</span>
+                        <p>
+                            <label>交友宣言：</label>
+                            <span>爱我你怕了吗？</span>
+                        </p>
+                </div>
+                <div class="box">
+                    <img src="img/wdl/searchimg/07.jpg" alt="">
+                    <p><a href="#">用户名</a></p>
+                            <span>22</span><span>岁,</span><span>浙江杭州</span>,<span>161cm</span>
+                        <p><label>交友宣言：</label><span>爱我你怕了吗？</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        这是底部
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.waterfall.js"></script>
+    <script src="js/cityselect.js"></script>
+    <script>
+        $("#div1").waterfall({
+            itemClass: ".box",
+            minColCount: 2,
+            spacingHeight: 10,
+            resizeable: true,
+            ajaxCallback: function (success, end) {
+                var data = {
+                    "data": [{
+                        "src": "03.jpg"
+                    }, {
+                        "src": "04.jpg"
+                    }, {
+                        "src": "02.jpg"
+                    }, {
+                        "src": "05.jpg"
+                    }, {
+                        "src": "01.jpg"
+                    }, {
+                        "src": "06.jpg"
+                    }]
+                };
+                var str = "";
+                var templ =
+                    '<div class="box" style="opacity:0;filter:alpha(opacity=0);"><div class="pic"><img src="img/wdl/searchimg/{{src}}" /> <p><a href="#">用户名</a></p>  <span>22</span><span>岁,</span><span>浙江杭州</span>,<span>161cm</span> <p><label>交友宣言：</label><span>爱我你怕了吗？</span></p></div></div>'
+                for (var i = 0; i < data.data.length; i++) {
+                    str += templ.replace("{{src}}", data.data[i].src);
+                }
+                $(str).appendTo($("#div1"));
+                success();
+                end();
+            }
+        });
+        var test = new Vcity.CitySelector({
+            input: 'citySelect'
+        });
+    </script>
+</body>
+
+</html>

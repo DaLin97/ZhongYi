@@ -1,0 +1,130 @@
+.card {
+	margin-top: 30px;
+}
+
+.card div {
+	height: 100px;
+}
+
+.cardone1 {
+	margin-left: 30px;
+}
+
+.cardone2 {
+	margin-left: 30px;
+}
+
+/*无限轮播图形样式*/
+* {
+	margin: 0;
+}
+
+#div1 {
+	margin: auto;
+	position: relative;
+}
+
+.box {
+	float: left;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #f7f7f7;
+	box-shadow: 0 0 8px #ccc;
+}
+
+.box:hover {
+	box-shadow: 0 0 10px #999;
+}
+
+.box img {
+	width: 200px;
+}
+
+.htmleaf-container {
+	margin-top: 50px;
+}
+
+/******/
+select {
+	width: 20px;
+}
+
+.col-7 {
+	margin-top: 28px;
+}
+
+#citySelect {
+	margin-top: 5px;
+	width: 68px;
+	height: calc(1.8125rem + 2px);
+	padding-top: .375rem;
+	padding-bottom: .375rem;
+	font-size: 75%;
+	display: inline-block;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+
+.col-7 select {
+	width: 10.5%
+}
+
+#sousuo {
+	display: inline;
+	width: 142px;
+	margin-top: 5px;
+	height: calc(1.8125rem + 2px);
+	padding-top: .375rem;
+	padding-bottom: .375rem;
+	font-size: 75%;
+	display: inline-block;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+
+#tubiao img {
+	background-color: dimgrey;
+	width: 23px;
+	height: 23px;
+}
+
+.col-2 {
+	margin-top: 28px;
+}
+
+.cardone2 {
+	border-top-style: dotted;
+	border-top-width: 1px;
+}
+
+.col-8 button {
+	width: 140px;
+	color: pink;
+	margin-left: 600px;
+	margin-top: -20px;
+}
+
+.col-8 ul {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.htmleaf-container p a {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.htmleaf-container span {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 14px;
+	color: gray;
+}
+
+.htmleaf-container label {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 14px;
+	font-weight: bold;
+	color: gray;
+}

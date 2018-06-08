@@ -1,0 +1,103 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="css/footerCSS.css">
+<div class="container-fluid">
+<div class="text" style="margin-top:50px;">
+	<div class="text-nowrap" style="width: 10px; margin-left: 100px;"
+		id="iscity">
+		城市征婚： <span id="iscitys"> <a class="list-inline-item" href="#">
+				<label>北京</label>
+		</a> <a class="list-inline-item" href="#"> <label>上海</label>
+		</a> <a class="list-inline-item" href="#"> <label>深圳</label>
+		</a> <a class="list-inline-item" href="#"> <label>南京</label>
+		</a> <a class="list-inline-item" href="#"> <label>重庆</label>
+		</a> <a class="list-inline-item" href="#"> <label>武汉</label>
+		</a> <a class="list-inline-item" href="#"> <label>成都</label>
+		</a> <a class="list-inline-item" href="#"> <label>杭州</label>
+		</a> <a class="list-inline-item" href="#"> <label>长沙</label>
+		</a> <a class="list-inline-item" href="#"> <label>西安</label>
+		</a> <a class="list-inline-item" href="#"> <label>东莞</label>
+		</a> <a class="list-inline-item" href="#"> <label>佛山</label>
+		</a> <a class="list-inline-item" href="#"> <label>苏州</label>
+		</a> <a class="list-inline-item" href="#"> <label>天津</label>
+		</a> <a class="list-inline-item" href="#"> <label>昆明</label>
+		</a> <a class="list-inline-item" href="#"> <label>沈阳</label>
+		</a> <a class="list-inline-item" href="#"> <label>济南</label>
+		</a> <a class="list-inline-item" href="#"> <label>长春</label>
+		</a> <a class="list-inline-item" href="#"> <label>太原</label>
+		</a> <a class="list-inline-item" href="#"> <label>合肥</label>
+		</a> <a class="list-inline-item" href="#"> <label>贵阳</label>
+		</a> <a class="list-inline-item" href="#"> <label>福州</label>
+		</a> <a class="list-inline-item" href="#"> <label>[更多城市]</label>
+		</a>
+		</span>
+	</div>
+</div>
+<hr>
+
+
+<footer class="text-nowrap">
+	<div class="">
+		<div class="font-weight-light" id="pyfooter">
+			<div class="text-center">
+				<a class="list-inline-item" href="#"> <label>关于我们</label>
+				</a>|&nbsp;&nbsp; <a class="list-inline-item" href="#"> <label>联系我们</label>
+				</a>|&nbsp;&nbsp; <a class="list-inline-item" href="#"> <label>加入我们</label>
+				</a>|&nbsp;&nbsp; <a class="list-inline-item" href="#" rel="nofollow">
+					<label>合作伙伴</label>
+				</a>|&nbsp;&nbsp; <a class="list-inline-item" href="#" rel="nofollow">
+					<label>意见反馈</label>
+				</a>|&nbsp;&nbsp; <a href="#" class="list-inline-item"> <label>网站地图</label>
+				</a> |&nbsp;&nbsp; <a href="#" class="list-inline-item"> <label>帮助中心</label>
+				</a>|&nbsp;&nbsp; <a href="#" class="list-inline-item"> <label>PY会员</label>
+				</a>|&nbsp;&nbsp; <a href="#" class="list-inline-item"> <label>PY相亲</label>
+				</a>|&nbsp;&nbsp; <a href="#" class="list-inline-item"> <label>PY网服务协议</label>
+				</a>|&nbsp;&nbsp; <a href="#" class="list-inline-item"> <label>个人信息保护政策</label>
+				</a>
+			</div>
+			<br>
+			<div class="text-center">
+				<span>品牌：100年专业交友服务</span>&nbsp;&nbsp; <span>专业：庞大程序员队伍</span>&nbsp;&nbsp;
+				<span>真实：没有任何诚信保证，绝对让你放心</span>
+			</div>
+			<div class="text-center">
+				<span>客服热线：6666666666（号码绝对秒接）</span> <span>客服信箱：Pyfriends@Py.com</span>
+			</div>
+			<div class="text-center">
+				<span> <a style="color: #9f9f9f;" href="#" target="_blank"
+					rel="nofollow">违法和不良信息举报</a>
+				</span>&nbsp;&nbsp; <span>违法和不良信息举报专线：66666666</span>&nbsp;&nbsp; <span>举报信箱：
+					<a style="color: #9f9f9f;" href="Pyfriends@Py.com"
+					class="underlines" rel="nofollow">jubao@zhenai.com</a>
+				</span>
+			</div>
+		</div>
+
+		<div class="text-center" id="pyfooter1">
+			<p>Copyright © 2018-6666 PYfriends版权所有：杭州指针信息技术有限公司</p>
+			<p>
+				增值电信业务经营许可证：浙A-666666666 <a target="_blank" href="#">浙ICP备66666666号-1</a>
+				乙测资字66666666 <a target="_blank" href="#" class="gongwang"> <img
+					src="header/footerimg/gongan.png" alt="">
+				</a> 浙公网安备 666666666号
+			</p>
+
+			<div class="out-link" id="foot_link">
+				<a title="网文证" href="#"> <img
+					src="header/footerimg/wen_bc81e4f.png" height="45px" width="45px;">
+				</a> <a target="_blank" title="深圳网监备案" href="#"> <img
+					src="header/footerimg/licence_29e09a5.png" alt="">
+				</a> <a title="深圳举报中心" href="#" class="link6"> <img
+					src="header/footerimg/report_625a5f6.png" alt="">
+				</a> <a title="违法和不良信息举报中心" href="#"> <img
+					src="header/footerimg/report_dfda835.jpg" alt="">
+				</a> <a title="诚信示范网站" href="#"> <img
+					src="header/footerimg/cert_c313c2f.png" alt="">
+				</a> <a title="AAA级信用企业" href="#"> <img
+					src="header/footerimg/rate_e612220.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>

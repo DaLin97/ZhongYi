@@ -1,0 +1,30 @@
+
+
+/*右侧列表*/
+div#rightSidebody{
+    /* height: 1000px; */
+    /* background-color: blue; */
+    border:2px solid #000;
+    border-radius: 5px;
+    
+}
+div#rightSidebody div#previewInfo{
+    background-color: #ccc;
+    border-bottom: 1px solid #929292;
+    padding: 10px;
+}
+div#baseinfo_single form div{
+    padding-bottom:10px;
+}
+
+/* 下一页按钮 */
+div#baseInfoButton{
+    padding-left: 30%;
+    padding-bottom: 30px;
+}
+div#baseInfoButton a#baseInfoButtonA1{
+    margin-right: 20%;
+}
+
+
+
